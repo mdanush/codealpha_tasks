@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Image Gallery</h1>
+    <p>Discover the breathtaking beauty of our world through stunning photography. From serene landscapes to vibrant cityscapes, explore nature's artistry.</p>
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterImages('all')">All Images</button>
+      <button class="filter-btn" onclick="filterImages('nature')">🌿 Nature</button>
+      <button class="filter-btn" onclick="filterImages('city')">🏙️ City</button>
+      <button class="filter-btn" onclick="filterImages('architecture')">🏛️ Architecture</button>
+      <button class="filter-btn" onclick="filterImages('wildlife')">🦅 Wildlife</button>
+    </div>
+  </header>
+
+  <main class="gallery">
+    <!-- Sample images -->
+    <div class="image nature"><img src="/home/rgukts/Documents/image gallery/nature.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="/home/rgukts/Documents/image gallery/nature1.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="/home/rgukts/Documents/image gallery/nature2.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image nature"><img src="/home/rgukts/Documents/image gallery/nature3.jpeg" onclick="openLightbox(this)" /></div>
+    
+    <div class="image city"><img src="/home/rgukts/Documents/image gallery/city.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="/home/rgukts/Documents/image gallery/city1.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="/home/rgukts/Documents/image gallery/city2.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image city"><img src="/home/rgukts/Documents/image gallery/city3.jpeg" onclick="openLightbox(this)" /></div>
+    
+    
+    <div class="image architecture"><img src="/home/rgukts/Documents/image gallery/architect.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image architecture"><img src="/home/rgukts/Documents/image gallery/architect1.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image architecture"><img src="/home/rgukts/Documents/image gallery/architect2.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image architecture"><img src="/home/rgukts/Documents/image gallery/architect3.jpeg" onclick="openLightbox(this)" /></div>
+   
+    <div class="image wildlife"><img src="/home/rgukts/Documents/image gallery/lion.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image wildlife"><img src="/home/rgukts/Documents/image gallery/lion1.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image wildlife"><img src="/home/rgukts/Documents/image gallery/cheetha.jpeg" onclick="openLightbox(this)" /></div>
+    <div class="image wildlife"><img src="/home/rgukts/Documents/image gallery/tigers.jpeg" onclick="openLightbox(this)" /></div>
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="nav">
+      <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+      <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
