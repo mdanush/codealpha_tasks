@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.player {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  width: 350px;
+  text-align: center;
+}
+.cover {
+  width: 100%;
+  border-radius: 15px;
+}
+h2, h3 {
+  margin: 10px 0;
+}
+.controls {
+  margin-top: 15px;
+}
+.controls button {
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #2a5298;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.controls button:hover {
+  transform: scale(1.1);
+}
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.progress {
+  height: 8px;
+  background: #00ffcc;
+  border-radius: 4px;
+  width: 0;
+}
+.volume-control {
+  margin-top: 15px;
+}
+input[type=range] {
+  width: 100%;
+}
+.playlist {
+  margin-top: 20px;
+  text-align: left;
+}
+.playlist li {
+  cursor: pointer;
+  padding: 5px;
+  list-style: none;
+  border-bottom: 1px solid #ccc;
+}
+.playlist li:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
